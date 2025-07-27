@@ -3,12 +3,79 @@ body {
   font-size: large;
   line-height: 1.42857143;
   color: #333;
-  background-color: #4091ba;
+  background: linear-gradient(135deg, #4091ba 0%, #6bb6d6 50%, #4091ba 100%);
+  background-attachment: fixed;
   text-align: center;
+  min-height: 100vh;
+}
+
+figure {
+  display: inline-block;
+  margin: 20px;
+  padding: 15px;
+  border: 3px solid #2c5f7a;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.9);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+figure:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
 
 img {
-  max-width: 50%;
+  max-width: 400px;
+  width: 100%;
   height: auto;
-  padding: 10px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+figcaption {
+  font-size: 0.9em;
+  color: #333;
+  font-style: italic;
+  margin-top: 5px;
+}
+
+h1 {
+  color: #2c5f7a;
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  margin-bottom: 20px;
+  font-size: 2.5em;
+}
+
+h2 {
+  color: #2c5f7a;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+}
+
+h3 {
+  color: #2c5f7a;
+  margin-bottom: 15px;
+}
+
+.capybara-fact {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px solid #2c5f7a;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+  text-align: left;
+  display: inline-block;
+  margin: 0;
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
 }
